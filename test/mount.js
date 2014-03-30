@@ -20,7 +20,14 @@ describe('Mount', function() {
 			assert.equal(child.route, '/');
 		});
 
-		it('mounts on route', function() {
+		it('mounts on same route as parent', function() {
+			//route is private
+			app.route = '/test';
+			app.use(child);
+			assert.equal(child.route, '/test');			
+		});
+
+		it('mounts with name', function() {
 			app.use('child', child);
 			assert.equal(child.route, '/child');
 		});
