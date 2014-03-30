@@ -1,7 +1,7 @@
 
-# plumby
+# Plumby
 
-  Fast, unopinionated, minimalist and composable web framework for your [browser](#support).  
+  Fast, unopinionated, minimalist and composable web framework for your [browser](#browser-support).  
 
 ```js
 var plumby = require('plumby');
@@ -72,7 +72,7 @@ Actually, an app could use a view plugin piped to the app hooks and events. It m
 ```js
 var ui = plumby()
 
-ui.use(view('hello', #hello'));
+ui.use(view('hello', '#hello'));
 ui.use(view('world', '#world'));
 ```
 
@@ -86,14 +86,15 @@ Benefits:
   - reusable
   - scalable
 
-## API
+## Browser Support
 
+Store supports all mainstream browsers from IE7+.
 
 ## License
 
   The MIT License (MIT)
 
-  Copyright (c) 2014 <copyright holders>
+  Copyright (c) 2014 <Olivier Wietrich>
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
