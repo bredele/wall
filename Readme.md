@@ -11,7 +11,15 @@
 
 ## API
 
+### plumby(name)
 
+
+### .use(name, plumby)
+
+ .
+
+```js
+```
 
 ## License
 

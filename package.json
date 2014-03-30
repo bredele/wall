@@ -18,5 +18,11 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bredele/plumby/issues"
+  },
+  "dependencies": {
+    "component-emitter": "~1.1.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.2"
   }
 }
