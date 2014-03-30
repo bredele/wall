@@ -43,11 +43,14 @@ describe('Inject > ', function() {
       plumby
         .inject('hello')
         .use(function(ctx) {
-          ctx.hello = 'world';
+          ctx.hello = 'hello';
+        })
+        .use(function(ctx) {
+          ctx.hello = ctx.hello + ' world!';
         });
 
       var app = plumby('hello');
-      assert.equal(app.hello, 'world');
+      assert.equal(app.hello, 'hello world!');
     });
 
     //NOTE: we should be able to catch the created event!
