@@ -98,7 +98,7 @@ Store supports all mainstream browsers from IE8+.
 
   The MIT License (MIT)
 
-  Copyright (c) 2014 <Olivier Wietrich>
+  Copyright (c) 2014 <Olivier Wietrich> Olivier Wietrich
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
