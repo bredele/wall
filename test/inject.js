@@ -65,8 +65,6 @@ describe('Inject > ', function() {
       var app = plumby('name');
       assert.equal(app.hello, 'hello olivier');
     });
-
-    //NOTE: we should be able to catch the created event!
     
   });
 
