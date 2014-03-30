@@ -1,14 +1,14 @@
 var plumby = require('..');
 var assert = require('assert');
 
-describe('Mount', function() {
+describe('Mount > ', function() {
 
 	var app;
 	beforeEach(function() {
 		app = plumby();
 	});
 
-	describe('Routes', function() {
+	describe('Routes >', function() {
 
 		var mail;
 		beforeEach(function() {
@@ -47,9 +47,30 @@ describe('Mount', function() {
 				assert.equal(chat.route, '/mail/chat');
 				assert.equal(admin.route, '/mail/admin');				
 			});
-			
 
+		});
 
+	});
+
+	describe('Events > ', function() {
+
+		var plugin;
+		beforeEach(function() {
+			plugin = plumby();
+		});
+
+		it('emits mount event', function(done) {
+			app.on('mount', function(ref) {
+				if(ref === plugin) done();
+			});
+			app.use(plugin);
+		});
+
+		it('emits mount event with name', function(done) {
+			app.on('mount', function(ref, name) {
+				if(name === 'plugin') done();
+			});
+			app.use('plugin',plugin);
 		});
 
 	});
