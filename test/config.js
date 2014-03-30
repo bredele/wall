@@ -2,7 +2,7 @@ var plumby = require('..');
 var assert = require('assert');
 
 
-describe('Config > ', function() {
+describe('Store > ', function() {
 
 	var app;
 	beforeEach(function() {
@@ -10,36 +10,36 @@ describe('Config > ', function() {
 	});
 
 	it('set config', function() {
-		app.config({
+		app.store({
 			name: 'olivier'
 		});
-		assert.equal(app.config('name'), 'olivier');
+		assert.equal(app.store('name'), 'olivier');
 	});
 
 	it('set config attribute', function() {
-		app.config('project', 'plumby');
-		assert.equal(app.config('project'), 'plumby');
+		app.store('project', 'plumby');
+		assert.equal(app.store('project'), 'plumby');
 	});
 
 	it('updates config', function() {
-		app.config({
+		app.store({
 			name: 'olivier'
 		});
-		app.config({
+		app.store({
 			project: 'plumby',
 			github: 'bredele'
 		});
-		assert.equal(app.config('name'), 'olivier');
-		assert.equal(app.config('project'), 'plumby');
-		assert.equal(app.config('github'), 'bredele');
+		assert.equal(app.store('name'), 'olivier');
+		assert.equal(app.store('project'), 'plumby');
+		assert.equal(app.store('github'), 'bredele');
 	});
 
 	it('returns config', function() {
 		var obj = {
 			name: 'olivier'
 		};
-		app.config(obj);
-		assert.deepEqual(app.config(), obj);
+		app.store(obj);
+		assert.deepEqual(app.store(), obj);
 	});
 	
 	

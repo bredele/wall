@@ -100,7 +100,7 @@ describe('Mount > ', function() {
 		var settings, config;
 		beforeEach(function() {
 			settings = plumby();
-			settings.config('password', 'something');
+			settings.store('password', 'something');
 			config = {
 				account: 'bredele',
 				type: 'super'
@@ -109,7 +109,7 @@ describe('Mount > ', function() {
 
 		it('set mounted app config', function() {
 			app.use(settings, config);
-			assert.deepEqual(settings.config(), {
+			assert.deepEqual(settings.store(), {
 				account: 'bredele',
 				type: 'super',
 				password: 'something'
@@ -118,7 +118,7 @@ describe('Mount > ', function() {
 
 		it('set mounted app config with route', function() {
 			app.use('settings', settings, config);
-			assert.deepEqual(settings.config(), {
+			assert.deepEqual(settings.store(), {
 				account: 'bredele',
 				type: 'super',
 				password: 'something'

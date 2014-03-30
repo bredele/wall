@@ -9,7 +9,7 @@ describe('General', function() {
 	});
 
 	it('has config handler', function() {
-		assert.equal(typeof app.config, 'function');
+		assert.equal(typeof app.store, 'function');
 	});
 
 	it('has get handler', function() {
