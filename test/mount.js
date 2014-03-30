@@ -74,5 +74,20 @@ describe('Mount > ', function() {
 		});
 
 	});
+
+	describe('Function > ', function() {
+
+		it("mounts function with app scope", function(done) {
+			app.use(function(ctx) {
+				if(ctx === app) done();
+			});
+		});
+		
+	});
+
+	describe('Options > ', function() {
+		//pass options and set config :))
+	});
+
 	
 });
