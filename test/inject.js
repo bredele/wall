@@ -20,6 +20,20 @@ describe('Inject > ', function() {
 			assert.equal(app.name, 'olivier');
 			app.custom();
 		});
+
+		it("doesn't overrid plumby app handlers", function(done) {
+			var used = false;
+			plumby.inject('bar', {
+				custom: done,
+				use: function() {
+					used = true;
+				}
+			});
+			var app = plumby('bar');
+			app.use(function() {
+				if(!used) done();
+			});
+		});
 		
 	});
 	
