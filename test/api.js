@@ -12,6 +12,22 @@ describe('General', function() {
 		assert.equal(typeof app.config, 'function');
 	});
 
+	it('has get handler', function() {
+		assert.equal(typeof app.get, 'function');
+	});
+
+	it('has set handler', function() {
+		assert.equal(typeof app.set, 'function');
+	});
+
+	it('has enable handler', function() {
+		assert.equal(typeof app.enable, 'function');
+	});
+
+	it('has disable handler', function() {
+		assert.equal(typeof app.disable, 'function');
+	});
+
 	it('has use handler', function() {
 		assert.equal(typeof app.use, 'function');
 	});

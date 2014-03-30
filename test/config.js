@@ -1,6 +1,7 @@
 var plumby = require('..');
 var assert = require('assert');
 
+
 describe('Config > ', function() {
 
 	var app;

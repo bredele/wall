@@ -92,7 +92,7 @@ Benefits:
 
 ## Browser Support
 
-Store supports all mainstream browsers from IE7+.
+Store supports all mainstream browsers from IE8+.
 
 ## License
 
