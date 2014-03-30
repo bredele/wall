@@ -34,19 +34,19 @@ describe('Emitter', function() {
 	});
 
 	it('emit', function() {
-		
+		assert.equal(typeof app.emit, 'function');
 	});
 
 	it('on', function() {
-		
+		assert.equal(typeof app.on, 'function');
 	});
 
 	it('once', function() {
-		
+		assert.equal(typeof app.once, 'function');
 	});
 
 	it('off', function() {
-		
+		assert.equal(typeof app.off, 'function');
 	});
 
 });
