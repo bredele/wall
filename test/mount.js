@@ -115,6 +115,15 @@ describe('Mount > ', function() {
 				password: 'something'
 			});
 		});
+
+		it('set mounted app config with route', function() {
+			app.use('settings', settings, config);
+			assert.deepEqual(settings.config(), {
+				account: 'bredele',
+				type: 'super',
+				password: 'something'
+			});
+		});
 		
 	});
 
