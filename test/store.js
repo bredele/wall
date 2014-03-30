@@ -42,5 +42,10 @@ describe('Store > ', function() {
 		assert.deepEqual(app.store(), obj);
 	});
 	
+	it('checks if setting name is enabled', function() {
+		assert.equal(app.enabled('hello'), false);
+		app.enable('hello');
+		assert.equal(app.enabled('hello'), true);
+	});
 	
 });

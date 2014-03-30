@@ -28,6 +28,14 @@ describe('General', function() {
 		assert.equal(typeof app.disable, 'function');
 	});
 
+	it('has enabled handler', function() {
+		assert.equal(typeof app.enabled, 'function');
+	});
+
+	it('has disabled handler', function() {
+		assert.equal(typeof app.disabled, 'function');
+	});
+
 	it('has use handler', function() {
 		assert.equal(typeof app.use, 'function');
 	});
