@@ -34,15 +34,18 @@ describe('Mount', function() {
 
 		describe('nested', function() {
 
-			var chat;
+			var chat, admin;
 			beforeEach(function() {
 				chat = plumby();
+				admin = plumby();
 			});
 
 			it('mount nested apps', function() {
 				app.use('mail', mail);
 				mail.use('chat', chat);
+				mail.use('admin', admin);
 				assert.equal(chat.route, '/mail/chat');
+				assert.equal(admin.route, '/mail/admin');				
 			});
 			
 
