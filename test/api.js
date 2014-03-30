@@ -49,4 +49,8 @@ describe('Emitter', function() {
 		assert.equal(typeof app.off, 'function');
 	});
 
+	it('queue', function() {
+		assert.equal(typeof app.queue, 'function');
+	});
+
 });
