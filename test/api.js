@@ -8,20 +8,20 @@ describe('General', function() {
 		app = plumby();
 	});
 
-	it('config handler', function() {
+	it('has config handler', function() {
 		assert.equal(typeof app.config, 'function');
 	});
 
-	it('use handler', function() {
+	it('has use handler', function() {
 		assert.equal(typeof app.use, 'function');
 	});
 	
-	it('pipe handler', function() {
+	it('has pipe handler', function() {
 		assert.equal(typeof app.pipe, 'function');
 	});
 
-	it('route property', function() {
-		assert(app.route);
+	it('has route property', function() {
+		assert.equal(typeof app.route, 'string');
 	});
 	
 });
