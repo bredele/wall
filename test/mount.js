@@ -82,6 +82,16 @@ describe('Mount > ', function() {
 				if(ctx === app) done();
 			});
 		});
+
+		it("passes options", function(done) {
+			var options = {
+				channel: 'plumby'
+			};
+			app.use(function(ctx, opts) {
+				if(opts === options) done();
+			}, options);
+		});
+		
 		
 	});
 
