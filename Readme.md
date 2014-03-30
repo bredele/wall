@@ -26,6 +26,8 @@ app.use('settings', settings);
 
     $ component install bredele/plumby
 
+See [API Reference](https://github.com/bredele/plumby/wiki).
+
 ## Philosophy
 
   The Plumby philosophy is to reduce the complexity of your web application by splitting it into small and **self contained** modules (or apps). An app is highly extensible, configurable and communicates through event messages. 
@@ -60,7 +62,7 @@ Features:
 
   - Event communication bus
   - Observable data store
-  - Elegant [dependencies injector]()
+  - Elegant dependencies injector
   - Lifecycle hooks
   - DOM and library agnostic
   - High test coverage
