@@ -1,6 +1,8 @@
 
 # Plumby
 
+[![Build Status](https://travis-ci.org/bredele/plumby.png?branch=master)](https://travis-ci.org/bredele/plumby)
+
   Fast, unopinionated, minimalist and composable web framework for your [browser](#browser-support).  
 
 ```js
