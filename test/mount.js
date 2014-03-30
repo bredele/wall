@@ -10,28 +10,44 @@ describe('Mount', function() {
 
 	describe('Routes', function() {
 
-		var child;
+		var mail;
 		beforeEach(function() {
-			child = plumby();
+			mail = plumby();
 		});
 
-		it('mounts on same route', function() {
-			app.use(child);
-			assert.equal(child.route, '/');
+		it('mounts app on same route', function() {
+			app.use(mail);
+			assert.equal(mail.route, '/');
 		});
 
-		it('mounts on same route as parent', function() {
+		it('mounts app on same route as parent app', function() {
 			//route is private
 			app.route = '/test';
-			app.use(child);
-			assert.equal(child.route, '/test');			
+			app.use(mail);
+			assert.equal(mail.route, '/test');			
 		});
 
-		it('mounts with name', function() {
-			app.use('child', child);
-			assert.equal(child.route, '/child');
+		it('mounts app with name', function() {
+			app.use('mail', mail);
+			assert.equal(mail.route, '/mail');
 		});
 
+		describe('nested', function() {
+
+			var chat;
+			beforeEach(function() {
+				chat = plumby();
+			});
+
+			it('mount nested apps', function() {
+				app.use('mail', mail);
+				mail.use('chat', chat);
+				assert.equal(chat.route, '/mail/chat');
+			});
+			
+
+
+		});
 
 	});
 	
