@@ -53,6 +53,19 @@ describe('Inject > ', function() {
       assert.equal(app.hello, 'hello world!');
     });
 
+    it('injects an app with configurable plugin', function() {
+      plumby
+        .inject('name')
+        .use(function(ctx, opts) {
+          ctx.hello = 'hello ' + opts.name;
+        }, {
+          name: 'olivier'
+        })
+
+      var app = plumby('name');
+      assert.equal(app.hello, 'hello olivier');
+    });
+
     //NOTE: we should be able to catch the created event!
     
   });
