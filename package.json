@@ -20,7 +20,8 @@
     "url": "https://github.com/bredele/plumby/issues"
   },
   "dependencies": {
-    "component-emitter": "~1.1.2"
+    "component-emitter": "~1.1.2",
+    "store-component": "~0.1.7"
   },
   "devDependencies": {
     "mocha": "~1.18.2"

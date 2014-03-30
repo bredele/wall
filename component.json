@@ -5,7 +5,8 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "component/emitter": "*"
+    "component/emitter": "*",
+    "bredele/store": "*"
   },
   "development": {},
   "license": "MIT",
