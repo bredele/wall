@@ -21,7 +21,7 @@ describe('General', function() {
 	});
 
 	it('has route property', function() {
-		assert.equal(typeof app.route, 'string');
+		assert.equal(app.route, '/');
 	});
 	
 });
