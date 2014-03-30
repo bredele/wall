@@ -17,19 +17,19 @@ describe('Mount > ', function() {
 
 		it('mounts app on same route', function() {
 			app.use(mail);
-			assert.equal(mail.route, '/');
+			assert.equal(mail._route, '/');
 		});
 
 		it('mounts app on same route as parent app', function() {
 			//route is private
-			app.route = '/test';
+			app._route = '/test';
 			app.use(mail);
-			assert.equal(mail.route, '/test');			
+			assert.equal(mail._route, '/test');			
 		});
 
 		it('mounts app with name', function() {
 			app.use('mail', mail);
-			assert.equal(mail.route, '/mail');
+			assert.equal(mail._route, '/mail');
 		});
 
 		describe('nested', function() {
@@ -44,8 +44,8 @@ describe('Mount > ', function() {
 				app.use('mail', mail);
 				mail.use('chat', chat);
 				mail.use('admin', admin);
-				assert.equal(chat.route, '/mail/chat');
-				assert.equal(admin.route, '/mail/admin');				
+				assert.equal(chat._route, '/mail/chat');
+				assert.equal(admin._route, '/mail/admin');				
 			});
 
 		});

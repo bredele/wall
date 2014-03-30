@@ -49,7 +49,7 @@ describe('General', function() {
 	// });
 
 	it('has route property', function() {
-		assert.equal(app.route, '/');
+		assert.equal(app._route, '/');
 	});
 	
 });
