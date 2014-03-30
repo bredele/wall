@@ -39,6 +39,10 @@ describe('General', function() {
 	it('has use handler', function() {
 		assert.equal(typeof app.use, 'function');
 	});
+
+	it('has configure handler', function() {
+		assert.equal(typeof app.configure, 'function');
+	});
 	
 	// it('has pipe handler', function() {
 	// 	assert.equal(typeof app.pipe, 'function');
