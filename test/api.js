@@ -16,9 +16,9 @@ describe('General', function() {
 		assert.equal(typeof app.use, 'function');
 	});
 	
-	it('has pipe handler', function() {
-		assert.equal(typeof app.pipe, 'function');
-	});
+	// it('has pipe handler', function() {
+	// 	assert.equal(typeof app.pipe, 'function');
+	// });
 
 	it('has route property', function() {
 		assert.equal(app.route, '/');

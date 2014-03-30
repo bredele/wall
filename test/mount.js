@@ -77,13 +77,13 @@ describe('Mount > ', function() {
 
 	describe('Function > ', function() {
 
-		it("mounts function with app scope", function(done) {
+		it('mounts function with app scope', function(done) {
 			app.use(function(ctx) {
 				if(ctx === app) done();
 			});
 		});
 
-		it("passes options", function(done) {
+		it('passes options', function(done) {
 			var options = {
 				channel: 'plumby'
 			};
@@ -96,7 +96,26 @@ describe('Mount > ', function() {
 	});
 
 	describe('Options > ', function() {
-		//pass options and set config :))
+		
+		var settings, config;
+		beforeEach(function() {
+			settings = plumby();
+			settings.config('password', 'something');
+			config = {
+				account: 'bredele',
+				type: 'super'
+			};
+		});
+
+		it('set mounted app config', function() {
+			app.use(settings, config);
+			assert.deepEqual(settings.config(), {
+				account: 'bredele',
+				type: 'super',
+				password: 'something'
+			});
+		});
+		
 	});
 
 	
