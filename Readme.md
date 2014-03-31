@@ -54,7 +54,7 @@ plumby()
 
   See [wiki](https://github.com/bredele/plumby/wiki) for list of third plugins and apps.
 
-  Because Plumby makes easy to expose and reuse third apps, you won't have to reinvent the wheel, do the same stuff all over again and could focus on what makes your application special.
+  Because Plumby makes easy to expose and reuse third apps, you won't have to reinvent the wheel or do the same stuff all over again. Instead you'll be able to focus on what makes your application special.
 
 ## Features and Benefits
 
