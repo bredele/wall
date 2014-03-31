@@ -60,14 +60,14 @@ describe('Mount > ', function() {
 		});
 
 		it('emits mount event', function(done) {
-			app.on('mount', function(ref) {
+			app.sandbox.on('mount', function(ref) {
 				if(ref === plugin) done();
 			});
 			app.use(plugin);
 		});
 
 		it('emits mount event with name', function(done) {
-			app.on('mount', function(ref, name) {
+			app.sandbox.on('mount', function(ref, name) {
 				if(name === 'plugin') done();
 			});
 			app.use('plugin',plugin);

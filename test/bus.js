@@ -13,22 +13,19 @@ describe('Events', function() {
 	});
 
 	//NOTE: should initialize bus only on start
-	it('', function(done) {
-		// mail.on('/chat')('hello', function() {
-
-		// });
+	it('emits and listen messages', function(done) {
 		mail.on('/chat', function(msg) {
 			if(msg === 'hello') done();
 		});
 		chat.emit('hello');
 	});
 
-	it('', function(done) {
-		mail.from('chat').on('haha', function() {
-			done();
-		});
-		chat.to('mail').emit('haha');
-	});
+	// it('qq', function(done) {
+	// 	mail.from('chat').on('haha', function() {
+	// 		done();
+	// 	});
+	// 	chat.to('mail').emit('haha');
+	// });
 	
 
 });

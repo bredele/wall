@@ -43,6 +43,14 @@ describe('General', function() {
 	it('has configure handler', function() {
 		assert.equal(typeof app.configure, 'function');
 	});
+
+	// it('has from handler', function() {
+	// 	assert.equal(typeof app.from, 'function');
+	// });
+
+	// it('has to handler', function() {
+	// 	assert.equal(typeof app.to, 'function');
+	// });
 	
 	// it('has pipe handler', function() {
 	// 	assert.equal(typeof app.pipe, 'function');
@@ -77,8 +85,8 @@ describe('Emitter', function() {
 		assert.equal(typeof app.off, 'function');
 	});
 
-	it('queue', function() {
-		assert.equal(typeof app.queue, 'function');
-	});
+	// it('queue', function() {
+	// 	assert.equal(typeof app.queue, 'function');
+	// });
 
 });
