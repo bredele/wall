@@ -15,6 +15,7 @@
   "scripts": [
     "index.js",
     "lib/plumby.js",
-    "lib/app.js"
+    "lib/app.js",
+    "lib/bus.js"
   ]
 }
