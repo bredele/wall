@@ -3,29 +3,44 @@ var assert = require('assert');
 
 describe('Events', function() {
 
-	var app, chat, mail;
+	var app, chat, mail, admin;
 	beforeEach(function() {
 		app = plumby();
 		chat = plumby();
 		mail = plumby();
+		admin = plumby();
+		app.use(admin);
 		app.use('chat', chat);
 		app.use('mail', mail);
 	});
 
-	//NOTE: should initialize bus only on start
-	it('emits and listen messages', function(done) {
-		mail.on('/chat', function(msg) {
-			if(msg === 'hello') done();
+	describe('dispatch', function() {
+
+		it('dispatches message among apps', function(done) {
+			chat.on('mail.new', function() {
+				done();
+			});
+			mail.dispatch('mail.new');
 		});
-		chat.emit('hello');
+
 	});
 
-	// it('qq', function(done) {
-	// 	mail.from('chat').on('haha', function() {
-	// 		done();
-	// 	});
-	// 	chat.to('mail').emit('haha');
-	// });
-	
+	describe('emit', function() {
+
+		it('emits message prefixed by app route', function(done) {
+			chat.on('/mail new', function() {
+				done();
+			});
+			mail.emit('new');
+		});
+
+		it('emits message from a route', function(done) {
+			chat.on('/mail', function(msg) {
+				if(msg === 'new') done();
+			});
+			mail.emit('new');
+		});
+
+	});
 
 });
