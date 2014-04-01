@@ -26,8 +26,8 @@
   },
   "dependencies": {
     "component-emitter": "~1.1.2",
-    "store-component": "~0.1.7",
-    "emitter-queue": "~0.1.2"
+    "emitter-queue": "~0.1.2",
+    "bredele-store": "~0.1.7"
   },
   "devDependencies": {
     "mocha": "~1.18.2"
