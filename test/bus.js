@@ -34,6 +34,7 @@ describe('Events', function() {
 			mail.emit('new');
 		});
 
+		//QUESTION: from admin it'll be / new ...we could clean that up
 		it('emits message from a route', function(done) {
 			chat.on('/mail', function(msg) {
 				if(msg === 'new') done();
@@ -42,5 +43,10 @@ describe('Events', function() {
 		});
 
 	});
+
+	it('queue events');
+	it('get events from');
+	it('emit events to');
+	it('pipes events');	
 
 });
