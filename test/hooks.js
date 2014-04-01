@@ -14,4 +14,14 @@ describe('Hooks', function() {
 		app.use(mail);
 	});
 
+	//froze
+	it('emits start');
+	it('emits stop');
+
+	//asynchronous mode
+	it('emits ready');
+
+	//it should be chainable
+	it('emits destroy');
+
 });
