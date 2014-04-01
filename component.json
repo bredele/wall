@@ -1,7 +1,7 @@
 {
   "name": "plumby",
   "repo": "bredele/plumby",
-  "description": "Better front end apps",
+  "description": "Express inspired event-driven architecture.",
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {

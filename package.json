@@ -1,7 +1,7 @@
 {
   "name": "plumby",
-  "version": "0.0.0",
-  "description": "Better front end apps",
+  "version": "0.0.1",
+  "description": "Express inspired event-driven architecture.",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/*.js"
@@ -11,6 +11,11 @@
     "url": "git://github.com/bredele/plumby.git"
   },
   "keywords": [
+    "express",
+    "architecture",
+    "event",
+    "middlware",
+    "framework",
     "pipe",
     "client"
   ],
