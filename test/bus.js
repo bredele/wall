@@ -1,7 +1,7 @@
 var plumby = require('..');
 var assert = require('assert');
 
-describe('Events', function() {
+describe('Events > ', function() {
 
 	var app, chat, mail, admin;
 	beforeEach(function() {
@@ -14,7 +14,7 @@ describe('Events', function() {
 		app.use('mail', mail);
 	});
 
-	describe('dispatch', function() {
+	describe('dispatch > ', function() {
 
 		it('dispatches message among apps', function(done) {
 			chat.on('mail.new', function() {
@@ -25,7 +25,7 @@ describe('Events', function() {
 
 	});
 
-	describe('emit', function() {
+	describe('emit > ', function() {
 
 		it('emits message prefixed by app route', function(done) {
 			chat.on('/mail new', function() {
