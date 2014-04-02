@@ -52,7 +52,7 @@ plumby()
 
   Plumby is also an ecosystem of plugins and apps. You can use apps to authenticate your apps, connect to an external service like Facebook or Twitter, store your data and way more in a single line of code. 
 
-  See [wiki](https://github.com/bredele/plumby/wiki) for list of third plugins and apps.
+  See [wiki](https://github.com/bredele/plumby/wiki/Plugins-and-apps) for list of third plugins and apps.
 
   Because Plumby makes easy to expose and reuse third apps, you won't have to reinvent the wheel or do the same stuff all over again. Instead you'll be able to focus on what makes your application special.
 
