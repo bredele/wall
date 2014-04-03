@@ -1,4 +1,3 @@
-
 # Plumby
 
 [![Build Status](https://travis-ci.org/bredele/plumby.png?branch=master)](https://travis-ci.org/bredele/plumby)
@@ -26,7 +25,8 @@ app.use('settings', settings);
 
     $ component install bredele/plumby
 
-See [Documentation](https://github.com/bredele/plumby/wiki).
+See [Getting started](https://github.com/bredele/plumby/wiki/Getting-started).
+See [API](https://github.com/bredele/plumby/wiki/API-Reference).
 
 ## Philosophy
 
