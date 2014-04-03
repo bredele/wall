@@ -26,7 +26,7 @@ app.use('settings', settings);
     $ component install bredele/plumby
 
 See [Getting started](https://github.com/bredele/plumby/wiki/Getting-started).
-See [API](https://github.com/bredele/plumby/wiki/API-Reference).
+and [API](https://github.com/bredele/plumby/wiki/API-Reference).
 
 ## Philosophy
 
