@@ -90,6 +90,22 @@ Benefits:
   - reusable
   - scalable
 
+## Contribution
+
+I would appreciate any contribution, feedback or support.
+If you have a related app or plugin, add it to this [list](https://github.com/bredele/plumby/wiki/Plugins-and-apps)!
+Bugs, suggestions & feature requests: [open an issue](https://github.com/bredele/plumby/issues)
+Twitter: @bredeleca
+Github: bredele
+
+Here's a wish list of plugins:
+  - ressource (client restful services)
+  - view (MVVM app)
+  - web components (register or declare custom tag)
+  - declarative init (init app with dom el)
+  - worker (app in a worker)
+  - mozilla persona (unified sign in)
+
 ## Browser Support
 
 Store supports all mainstream browsers from IE8+.
