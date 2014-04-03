@@ -91,16 +91,11 @@ Benefits:
   - scalable
 
 ## Contribution
-
-I would appreciate any contribution, feedback or support.
-
-If you have a related app or plugin, add it to this [list](https://github.com/bredele/plumby/wiki/Plugins-and-apps)!
-
-Bugs, suggestions & feature requests: [open an issue](https://github.com/bredele/plumby/issues)
-
-Twitter: @bredeleca
-
-Github: bredele
+I would appreciate any contribution, feedback or support:
+   - If you have a related app or plugin, add it to this [list](https://github.com/bredele/plumby/wiki/Plugins-and-apps)!
+   - Bugs, suggestions & feature requests: [open an issue](https://github.com/bredele/plumby/issues)
+   - Twitter: @bredeleca
+   - Github: bredele
 
 Here's a wish list of plugins:
   - ressource (client restful services)
