@@ -1,4 +1,3 @@
-
 # Plumby
 
 [![Build Status](https://travis-ci.org/bredele/plumby.png?branch=master)](https://travis-ci.org/bredele/plumby)
@@ -26,7 +25,8 @@ app.use('settings', settings);
 
     $ component install bredele/plumby
 
-See [Documentation](https://github.com/bredele/plumby/wiki).
+See [Getting started](https://github.com/bredele/plumby/wiki/Getting-started).
+and [API](https://github.com/bredele/plumby/wiki/API-Reference).
 
 ## Philosophy
 
@@ -89,6 +89,21 @@ Benefits:
   - maintainable
   - reusable
   - scalable
+
+## Contribution
+I would appreciate any contribution, feedback or support:
+   - If you have a related app or plugin, add it to this [list](https://github.com/bredele/plumby/wiki/Plugins-and-apps)!
+   - Bugs, suggestions & feature requests: [open an issue](https://github.com/bredele/plumby/issues)
+   - Twitter: @bredeleca
+   - Github: bredele
+
+Here's a wish list of plugins:
+  - ressource (client restful services)
+  - view (MVVM app)
+  - web components (register or declare custom tag)
+  - declarative init (init app with dom el)
+  - worker (app in a worker)
+  - mozilla persona (unified sign in)
 
 ## Browser Support
 
