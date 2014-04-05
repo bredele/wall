@@ -34,7 +34,7 @@ and [API](https://github.com/bredele/plumby/wiki/API-Reference).
 
   > Plumby is inspired by [Addy Osmany](http://addyosmani.com/largescalejavascript/) and [Nicholas Zakas](http://www.slideshare.net/nzakas/scalable-javascript-application-architecture-2012) work.
 
-  Its consistent interface makes developping a web application **as easy as playing to legos**. You can add, assemble or remove some apps, your application will never break. Most important, you can **[reuse](#ecosystem)** your apps in different projects and save some precious time!
+  Its consistent interface makes developping a web application **as easy as playing with legos**. You can add, assemble or remove some apps, your application will never break. Most importantly, you can **[reuse](#ecosystem)** your apps in different projects and save some precious time!
 
   For example, a web application like Gmail would look like:
 
