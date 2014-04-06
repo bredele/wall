@@ -2,11 +2,11 @@
   "name": "plumby",
   "repo": "bredele/plumby",
   "description": "Express inspired event-driven architecture.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": [],
   "dependencies": {
     "component/emitter": "*",
-    "bredele/store": "*",
+    "bredele/datastore": "*",
     "bredele/emitter-queue": "*"
   },
   "development": {},
