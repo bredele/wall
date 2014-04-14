@@ -1,14 +1,14 @@
-var plumby = require('..');
+var wall = require('..');
 var assert = require('assert');
 
 describe('Events > ', function() {
 
 	var app, chat, mail, admin;
 	beforeEach(function() {
-		app = plumby();
-		chat = plumby();
-		mail = plumby();
-		admin = plumby();
+		app = wall();
+		chat = wall();
+		mail = wall();
+		admin = wall();
 		app.use(admin);
 		app.use('chat', chat);
 		app.use('mail', mail);

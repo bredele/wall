@@ -1,6 +1,6 @@
 {
-  "name": "plumby",
-  "repo": "bredele/plumby",
+  "name": "wall",
+  "repo": "bredele/wall",
   "description": "Express inspired event-driven architecture.",
   "version": "0.1.0",
   "keywords": [],
@@ -14,7 +14,7 @@
   "main": "index.js",
   "scripts": [
     "index.js",
-    "lib/plumby.js",
+    "lib/wall.js",
     "lib/app.js",
     "lib/bus.js"
   ]

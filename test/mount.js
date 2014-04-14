@@ -1,18 +1,18 @@
-var plumby = require('..');
+var wall = require('..');
 var assert = require('assert');
 
 describe('Mount > ', function() {
 
 	var app;
 	beforeEach(function() {
-		app = plumby();
+		app = wall();
 	});
 
 	describe('Routes >', function() {
 
 		var mail;
 		beforeEach(function() {
-			mail = plumby();
+			mail = wall();
 		});
 
 		it('mounts app on same route', function() {
@@ -36,8 +36,8 @@ describe('Mount > ', function() {
 
 			var chat, admin;
 			beforeEach(function() {
-				chat = plumby();
-				admin = plumby();
+				chat = wall();
+				admin = wall();
 			});
 
 			it('mount nested apps', function() {
@@ -56,7 +56,7 @@ describe('Mount > ', function() {
 
 		var plugin;
 		beforeEach(function() {
-			plugin = plumby();
+			plugin = wall();
 		});
 
 		it('emits mount event', function(done) {
@@ -85,7 +85,7 @@ describe('Mount > ', function() {
 
 		it('passes options', function(done) {
 			var options = {
-				channel: 'plumby'
+				channel: 'wall'
 			};
 			app.use(function(ctx, opts) {
 				if(opts === options) done();
@@ -99,7 +99,7 @@ describe('Mount > ', function() {
 		
 		var settings, config;
 		beforeEach(function() {
-			settings = plumby();
+			settings = wall();
 			settings.store('password', 'something');
 			config = {
 				account: 'bredele',

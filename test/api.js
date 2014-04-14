@@ -1,11 +1,11 @@
-var plumby = require('..');
+var wall = require('..');
 var assert = require('assert');
 
 describe('General', function() {
 
 	var app;
 	beforeEach(function() {
-		app = plumby();
+		app = wall();
 	});
 
 	it('has config handler', function() {
@@ -54,7 +54,7 @@ describe('Emitter', function() {
 	
 	var app;
 	beforeEach(function() {
-		app = plumby();
+		app = wall();
 	});
 
 	it('emit', function() {

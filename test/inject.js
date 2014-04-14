@@ -1,35 +1,35 @@
-var plumby = require('..');
+var wall = require('..');
 var assert = require('assert');
 
 describe('Inject > ', function() {
 
   it('has inject handler', function() {
-    assert.equal(typeof plumby.inject, 'function');
+    assert.equal(typeof wall.inject, 'function');
   });
 
   describe('Mixin > ', function() {
 
     it('injects an object with an app ', function(done) {
-      plumby.inject('foo', {
+      wall.inject('foo', {
         custom: done,
         name: 'olivier'
       });
 
-      var app = plumby('foo');
+      var app = wall('foo');
       assert(app.custom);
       assert.equal(app.name, 'olivier');
       app.custom();
     });
 
-    it("doesn't overridw plumby app handlers", function(done) {
+    it("doesn't overridw wall app handlers", function(done) {
       var used = false;
-      plumby.inject('bar', {
+      wall.inject('bar', {
         custom: done,
         use: function() {
           used = true;
         }
       });
-      var app = plumby('bar');
+      var app = wall('bar');
       app.use(function() {
         if(!used) done();
       });
@@ -40,7 +40,7 @@ describe('Inject > ', function() {
   describe('Plugins', function() {
 
     it('injects an app with plugins', function() {
-      plumby
+      wall
         .inject('hello')
         .use(function(ctx) {
           ctx.hello = 'hello';
@@ -49,12 +49,12 @@ describe('Inject > ', function() {
           ctx.hello = ctx.hello + ' world!';
         });
 
-      var app = plumby('hello');
+      var app = wall('hello');
       assert.equal(app.hello, 'hello world!');
     });
 
     it('injects an app with configurable plugin', function() {
-      plumby
+      wall
         .inject('name')
         .use(function(ctx, opts) {
           ctx.hello = 'hello ' + opts.name;
@@ -62,7 +62,7 @@ describe('Inject > ', function() {
           name: 'olivier'
         })
 
-      var app = plumby('name');
+      var app = wall('name');
       assert.equal(app.hello, 'hello olivier');
     });
     

@@ -1,47 +1,47 @@
-# Plumby
+# Wall
 
-[![Build Status](https://travis-ci.org/bredele/plumby.png?branch=master)](https://travis-ci.org/bredele/plumby)
+[![Build Status](https://travis-ci.org/bredele/wall.png?branch=master)](https://travis-ci.org/bredele/wall)
 
   Fast, unopinionated, minimalist and composable web framework for your [browser](#browser-support).  
 
 ```js
-var plumby = require('plumby');
-var app = plumby();
+var wall = require('wall');
+var app = wall();
 
 app.use(auth());
 app.use(localstore());
 app.use('settings', settings);
 ```
 
-  You probably noticed `plumby` is deeply inspired by [express](https://github.com/visionmedia/express). As express, its clean and nice API provides a robust set of features to build scalable and maintainable application in a flash.
+  You probably noticed `wall` is deeply inspired by [express](https://github.com/visionmedia/express). As express, its clean and nice API provides a robust set of features to build scalable and maintainable application in a flash.
 
 ## Installation
 
   Install with [npm](http://nodejs.org):
 
-    $ npm install plumby
+    $ npm install wall
 
   Install with [component](http://component.io):
 
-    $ component install bredele/plumby
+    $ component install bredele/wall
 
-See [Getting started](https://github.com/bredele/plumby/wiki/Getting-started).
-and [API](https://github.com/bredele/plumby/wiki/API-Reference).
+See [Getting started](https://github.com/bredele/wall/wiki/Getting-started).
+and [API](https://github.com/bredele/wall/wiki/API-Reference).
 
 ## Philosophy
 
-  The Plumby philosophy is to reduce the complexity of your web application by splitting it into small and **self contained** modules (or apps). An app is highly extensible, configurable and communicates through event messages. 
+  The Wall philosophy is to reduce the complexity of your web application by splitting it into small and **self contained** modules (or apps). An app is highly extensible, configurable and communicates through event messages. 
 
-  > Plumby is inspired by [Addy Osmany](http://addyosmani.com/largescalejavascript/) and [Nicholas Zakas](http://www.slideshare.net/nzakas/scalable-javascript-application-architecture-2012) work.
+  > Wall is inspired by [Addy Osmany](http://addyosmani.com/largescalejavascript/) and [Nicholas Zakas](http://www.slideshare.net/nzakas/scalable-javascript-application-architecture-2012) work.
 
   Its consistent interface makes developping a web application **as easy as playing with legos**. You can add, assemble or remove some apps, your application will never break. Most importantly, you can **[reuse](#ecosystem)** your apps in different projects and save some precious time!
 
   For example, a web application like Gmail would look like:
 
 ```js
-var plumby = require('plumby');
+var wall = require('wall');
 
-plumby()
+wall()
   .use(auth())
   .use(mail())
   .use(spam())
@@ -50,11 +50,11 @@ plumby()
 
 ## Ecosystem
 
-  Plumby is also an ecosystem of plugins and apps. You can use apps to authenticate your apps, connect to an external service like Facebook or Twitter, store your data and way more in a single line of code. 
+  Wall is also an ecosystem of plugins and apps. You can use apps to authenticate your apps, connect to an external service like Facebook or Twitter, store your data and way more in a single line of code. 
 
-  See [wiki](https://github.com/bredele/plumby/wiki/Plugins-and-apps) for list of third plugins and apps.
+  See [wiki](https://github.com/bredele/wall/wiki/Plugins-and-apps) for list of third plugins and apps.
 
-  Because Plumby makes easy to expose and reuse third apps, you won't have to reinvent the wheel or do the same stuff all over again. Instead you'll be able to focus on what makes your application special.
+  Because Wall makes easy to expose and reuse third apps, you won't have to reinvent the wheel or do the same stuff all over again. Instead you'll be able to focus on what makes your application special.
 
 ## Features and Benefits
 
@@ -68,13 +68,13 @@ Features:
   - High test coverage
   - Support all mainstream browsers
 
-At the opposite of many web framework, Plumby doesn't make the assumption an app is related to DOM. For example, an app can just process data from a server and be used in a worker.
+At the opposite of many web framework, Wall doesn't make the assumption an app is related to DOM. For example, an app can just process data from a server and be used in a worker.
 It does not force you to use any libray or template engine. You are free to use whatever you want and to write the code you like. 
 
 Actually, an app could use a view plugin piped to the app hooks and events. It makes a flexible and powerful solution to create user interfaces.
 
 ```js
-var ui = plumby()
+var ui = wall()
 
 ui.use(view('hello', '#hello'));
 ui.use(view('world', '#world'));
@@ -92,8 +92,8 @@ Benefits:
 
 ## Contribution
 I would appreciate any contribution, feedback or support:
-   - If you have a related app or plugin, add it to this [list](https://github.com/bredele/plumby/wiki/Plugins-and-apps)!
-   - Bugs, suggestions & feature requests: [open an issue](https://github.com/bredele/plumby/issues)
+   - If you have a related app or plugin, add it to this [list](https://github.com/bredele/wall/wiki/Plugins-and-apps)!
+   - Bugs, suggestions & feature requests: [open an issue](https://github.com/bredele/wall/issues)
    - Twitter: @bredeleca
    - Github: bredele
 

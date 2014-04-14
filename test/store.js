@@ -1,4 +1,4 @@
-var plumby = require('..');
+var wall = require('..');
 var assert = require('assert');
 
 
@@ -6,7 +6,7 @@ describe('Store > ', function() {
 
 	var app;
 	beforeEach(function() {
-		app = plumby();
+		app = wall();
 	});
 
 	it('set config', function() {
@@ -17,8 +17,8 @@ describe('Store > ', function() {
 	});
 
 	it('set config attribute', function() {
-		app.store('project', 'plumby');
-		assert.equal(app.store('project'), 'plumby');
+		app.store('project', 'wall');
+		assert.equal(app.store('project'), 'wall');
 	});
 
 	it('updates config', function() {
@@ -26,11 +26,11 @@ describe('Store > ', function() {
 			name: 'olivier'
 		});
 		app.store({
-			project: 'plumby',
+			project: 'wall',
 			github: 'bredele'
 		});
 		assert.equal(app.store('name'), 'olivier');
-		assert.equal(app.store('project'), 'plumby');
+		assert.equal(app.store('project'), 'wall');
 		assert.equal(app.store('github'), 'bredele');
 	});
 

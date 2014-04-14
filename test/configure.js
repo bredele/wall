@@ -1,4 +1,4 @@
-var plumby = require('..');
+var wall = require('..');
 var assert = require('assert');
 
 
@@ -6,7 +6,7 @@ describe('Configure > ', function() {
 
 	var app;
 	beforeEach(function() {
-		app = plumby();
+		app = wall();
 	});
 
 	it('configures app on env', function() {

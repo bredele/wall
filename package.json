@@ -1,5 +1,5 @@
 {
-  "name": "plumby",
+  "name": "wall",
   "version": "0.1.0",
   "description": "Express inspired event-driven architecture.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bredele/plumby.git"
+    "url": "git://github.com/bredele/wall.git"
   },
   "keywords": [
     "express",
@@ -22,7 +22,7 @@
   "author": "Olivier Wietrich <olivier.wietrich@gmail.com> (http://github.com/bredele)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bredele/plumby/issues"
+    "url": "https://github.com/bredele/wall/issues"
   },
   "dependencies": {
     "component-emitter": "~1.1.2",

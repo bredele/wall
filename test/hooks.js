@@ -1,12 +1,12 @@
-var plumby = require('..');
+var wall = require('..');
 var assert = require('assert');
 
 describe('Hooks', function() {
 
 	var app, mail;
 	beforeEach(function() {
-		app = plumby();
-		mail = plumby();		
+		app = wall();
+		mail = wall();		
 	});
 
 	it('emits mounted on use', function(done) {

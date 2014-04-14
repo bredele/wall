@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/plumby');
+module.exports = require('./lib/wall');
