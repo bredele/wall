@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/bredele/wall.png?branch=master)](https://travis-ci.org/bredele/wall)
 
+  > Your web application foundation.
+
   Fast, unopinionated, minimalist and composable web framework for your [browser](#browser-support).  
 
 ```js
