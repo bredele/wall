@@ -4,7 +4,7 @@
 
   > Your web application foundation.
 
-  Fast, unopinionated, minimalist and composable web framework for your [browser](#browser-support).  
+  Minimalist and composable web framework for your [browser](#browser-support).  
 
 ```js
 var wall = require('wall');
@@ -32,7 +32,7 @@ and [API](https://github.com/bredele/wall/wiki/API-Reference).
 
 ## Philosophy
 
-  The Wall philosophy is to reduce the complexity of your web application by splitting it into small and **self contained** modules (or apps). An app is highly extensible, configurable and communicates through event messages. 
+  The Wall philosophy is to reduce the complexity of your web application by splitting it into small and **self contained** modules (or sub apps). An app is highly extensible, configurable and communicates through event messages. 
 
   > Wall is inspired by [Addy Osmany](http://addyosmani.com/largescalejavascript/) and [Nicholas Zakas](http://www.slideshare.net/nzakas/scalable-javascript-application-architecture-2012) work.
 
@@ -49,6 +49,26 @@ wall()
   .use(spam())
   .use(chat()); //reused in google hangout
 ```
+
+<!-- ```
+ > views
+   - auth.js
+   - mail.js
+   - spam.js
+   - chat.js
+```
+
+```
+ > auth
+   - view.js
+ > mail
+   - view.js
+ > spam
+   - view.js
+ > chat
+   - view.js
+```
+ -->
 
 ## Ecosystem
 
