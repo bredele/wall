@@ -38,7 +38,6 @@ describe('Events > ', function() {
 
 		it('emits message prefixed by app route', function(done) {
 			chat.once('/mail new', function() {
-				console.log('called');
 				done();
 			});
 			mail.emit('new');
