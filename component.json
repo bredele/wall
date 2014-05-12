@@ -2,13 +2,13 @@
   "name": "wall",
   "repo": "bredele/wall",
   "description": "Express inspired event-driven architecture.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [],
   "dependencies": {
     "component/emitter": "*",
     "bredele/datastore": "*",
     "bredele/emitter-queue": "*",
-    "bredele/looping" : "*"
+    "bredele/looping": "*"
   },
   "development": {},
   "license": "MIT",
