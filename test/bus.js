@@ -22,7 +22,7 @@ describe('Events > ', function() {
 
 	describe('dispatch > ', function() {
 
-		it('dispatches message among apps', function(done) {
+		it('dispatches message among apps', function() {
 			var called = 0;
 			chat.on('mail.new', function() {
 				called++;
@@ -37,7 +37,8 @@ describe('Events > ', function() {
 	describe('emit > ', function() {
 
 		it('emits message prefixed by app route', function(done) {
-			chat.on('/mail new', function() {
+			chat.once('/mail new', function() {
+				console.log('called');
 				done();
 			});
 			mail.emit('new');
@@ -45,7 +46,7 @@ describe('Events > ', function() {
 
 		//QUESTION: from admin it'll be / new ...we could clean that up
 		it('emits message from a route', function(done) {
-			chat.on('/mail', function(msg) {
+			chat.once('/mail', function(msg) {
 				if(msg === 'new') done();
 			});
 			mail.emit('new');

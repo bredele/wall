@@ -27,7 +27,8 @@
   "dependencies": {
     "component-emitter": "~1.1.2",
     "datastore": "^1.0.0",
-    "emitter-queue": "~0.1.2"
+    "emitter-queue": "~0.1.2",
+    "looping": "^1.1.1"
   },
   "devDependencies": {
     "mocha": "~1.18.2"

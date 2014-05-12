@@ -7,7 +7,8 @@
   "dependencies": {
     "component/emitter": "*",
     "bredele/datastore": "*",
-    "bredele/emitter-queue": "*"
+    "bredele/emitter-queue": "*",
+    "bredele/looping" : "*"
   },
   "development": {},
   "license": "MIT",
