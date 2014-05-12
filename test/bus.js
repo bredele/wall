@@ -1,5 +1,11 @@
+
+/**
+ * Test dependencies.
+ */
+
 var wall = require('..');
 var assert = require('assert');
+
 
 describe('Events > ', function() {
 
@@ -17,10 +23,13 @@ describe('Events > ', function() {
 	describe('dispatch > ', function() {
 
 		it('dispatches message among apps', function(done) {
+			var called = 0;
 			chat.on('mail.new', function() {
-				done();
+				called++;
 			});
 			mail.dispatch('mail.new');
+			mail.dispatch('mail.new');
+			assert.equal(called, 2);
 		});
 
 	});
