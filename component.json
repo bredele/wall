@@ -5,10 +5,10 @@
   "version": "0.1.1",
   "keywords": [],
   "dependencies": {
-    "component/emitter": "*",
-    "bredele/datastore": "*",
+    "component/emitter": "1.1.1",
+    "bredele/datastore": "1.0.6",
     "bredele/emitter-queue": "*",
-    "bredele/looping": "*"
+    "bredele/looping": "1.1.1"
   },
   "development": {},
   "license": "MIT",
